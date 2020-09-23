@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM openjdk:11-jre-slim-buster
 COPY target/app-runner.jar /opt/app/
 COPY target/lib/* /opt/app/lib/
 COPY start-app.sh /opt/app/
